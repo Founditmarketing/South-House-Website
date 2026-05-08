@@ -87,7 +87,14 @@ export default function Gallery() {
     <div className="flex flex-col w-full bg-neutral-base pt-20">
       {/* Hero */}
       <section className="bg-primary text-white py-32 border-b border-slate-800 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gold/5 blur-[120px] -z-0"></div>
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/resources-hero.webp"
+            alt="Reference library"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/75 to-primary/40" />
+        </div>
         <div className="section-container relative z-10">
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 mb-6 uppercase tracking-[0.3em] text-[10px] font-bold text-gold">
