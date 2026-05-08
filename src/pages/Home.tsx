@@ -46,9 +46,9 @@ export default function Home() {
              <img
                src="/images/hero-desk.webp"
                alt="Tax documents and calculator on desk"
-               className="w-full h-full object-cover opacity-20 filter grayscale contrast-125"
+               className="w-full h-full object-cover opacity-40"
              />
-             <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/20" />
+             <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
           </div>
           
           <div className="relative z-10 w-full flex flex-col gap-10 max-w-md">

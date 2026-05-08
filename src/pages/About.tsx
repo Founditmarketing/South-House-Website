@@ -11,9 +11,9 @@ export default function About() {
           <img
             src="/images/tennessee-landscape.webp"
             alt="East Tennessee landscape"
-            className="w-full h-full object-cover opacity-10 filter grayscale"
+            className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-primary/30" />
         </div>
         <div className="section-container relative z-10">
           <motion.div

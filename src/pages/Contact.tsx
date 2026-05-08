@@ -30,9 +30,9 @@ export default function Contact() {
           <img
             src="/images/tax-documents.webp"
             alt="Professional tax documentation"
-            className="w-full h-full object-cover opacity-10 filter grayscale"
+            className="w-full h-full object-cover opacity-35"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/75 to-primary/30" />
         </div>
         <div className="section-container relative z-10">
           <div className="max-w-4xl">
