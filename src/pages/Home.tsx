@@ -43,8 +43,12 @@ export default function Home() {
         {/* Right Panel - Massive Stats */}
         <div className="lg:w-2/5 relative flex items-center justify-center p-8 lg:p-16 overflow-hidden bg-secondary">
           <div className="absolute inset-0 z-0">
-             <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-primary/60" />
-             <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'repeating-linear-gradient(45deg, #d4af37 0, #d4af37 1px, transparent 0, transparent 50%)', backgroundSize: '20px 20px'}} />
+             <img
+               src="/images/hero-desk.webp"
+               alt="Tax documents and calculator on desk"
+               className="w-full h-full object-cover opacity-20 filter grayscale contrast-125"
+             />
+             <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/20" />
           </div>
           
           <div className="relative z-10 w-full flex flex-col gap-10 max-w-md">
@@ -157,20 +161,13 @@ export default function Home() {
           </div>
           
           <div className="relative">
-             <div className="aspect-[3/4] bg-secondary p-8 border border-slate-700 shadow-2xl flex flex-col justify-between overflow-hidden">
-               <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'repeating-linear-gradient(-45deg, #d4af37 0, #d4af37 1px, transparent 0, transparent 50%)', backgroundSize: '24px 24px'}} />
-               <div className="relative z-10">
-                 <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-gold mb-6">Founded August 2011</p>
-                 <p className="text-5xl font-black text-white leading-tight tracking-tight">SOUTH<br/>HOUSE<br/><span className="text-gold italic">CPA</span></p>
-               </div>
-               <div className="relative z-10 space-y-4">
-                 {["Tax Preparation & Planning", "Bookkeeping & Payroll", "Business Advisory"].map((s) => (
-                   <div key={s} className="flex items-center gap-3">
-                     <div className="w-2 h-2 bg-gold shrink-0" />
-                     <span className="text-sm font-bold text-slate-300 uppercase tracking-widest">{s}</span>
-                   </div>
-                 ))}
-               </div>
+             <div className="aspect-[3/4] bg-secondary border border-slate-700 shadow-2xl overflow-hidden">
+               <img
+                 src="/images/financial-charts.webp"
+                 alt="Professional reviewing financial documents"
+                 className="w-full h-full object-cover opacity-40 filter grayscale hover:opacity-70 hover:grayscale-0 transition-all duration-1000"
+               />
+               <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent" />
              </div>
              <div className="absolute -bottom-16 -left-16 bg-gold p-12 shadow-2xl skew-x-[-6deg]">
                 <p className="text-5xl font-black italic mb-1 text-primary tracking-tighter uppercase leading-none">CPA</p>

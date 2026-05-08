@@ -25,7 +25,15 @@ export default function Contact() {
   return (
     <div className="flex flex-col w-full bg-neutral-base pt-20">
       {/* Hero */}
-      <section className="bg-primary text-white py-32 border-b border-slate-800">
+      <section className="relative bg-primary text-white py-32 border-b border-slate-800 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/tax-documents.webp"
+            alt="Professional tax documentation"
+            className="w-full h-full object-cover opacity-10 filter grayscale"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/50" />
+        </div>
         <div className="section-container relative z-10">
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 mb-6 uppercase tracking-[0.3em] text-[10px] font-bold text-gold">

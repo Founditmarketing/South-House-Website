@@ -6,8 +6,15 @@ export default function About() {
   return (
     <div className="flex flex-col w-full bg-neutral-base pt-20">
       {/* Hero */}
-      <section className="bg-primary text-white py-32 relative overflow-hidden border-b border-slate-800">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gold/5 -skew-x-12 transform translate-x-1/4"></div>
+      <section className="relative bg-primary text-white py-32 overflow-hidden border-b border-slate-800">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/tennessee-landscape.webp"
+            alt="East Tennessee landscape"
+            className="w-full h-full object-cover opacity-10 filter grayscale"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/40" />
+        </div>
         <div className="section-container relative z-10">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -35,13 +42,18 @@ export default function About() {
       {/* Owner Detail */}
       <section className="section-container grid grid-cols-1 lg:grid-cols-2 gap-24 items-center !py-32">
         <div className="relative group">
-          <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl border border-slate-800 bg-secondary p-10 flex flex-col justify-between aspect-[4/5]">
-            <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'repeating-linear-gradient(-45deg, #d4af37 0, #d4af37 1px, transparent 0, transparent 50%)', backgroundSize: '24px 24px'}} />
-            <div className="relative z-10">
+          <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl border border-slate-800 bg-secondary flex flex-col justify-between aspect-[4/5]">
+            <img
+              src="/images/handshake.webp"
+              alt="Professional handshake representing client partnership"
+              className="absolute inset-0 w-full h-full object-cover opacity-20 filter grayscale group-hover:opacity-40 group-hover:grayscale-0 transition-all duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent" />
+            <div className="relative z-10 p-10">
               <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-gold mb-6">Principal</p>
               <p className="text-4xl font-black text-white leading-tight tracking-tight">Steven<br/>Sorhus<br/><span className="text-gold italic">CPA</span></p>
             </div>
-            <div className="relative z-10 space-y-5">
+            <div className="relative z-10 space-y-4 p-10">
               {[
                 { label: "Education", value: "Master of Accountancy" },
                 { label: "University", value: "Truman State University" },
@@ -49,7 +61,7 @@ export default function About() {
                 { label: "Founded", value: "August 2011" },
                 { label: "Remote Since", value: "2016" },
               ].map((item) => (
-                <div key={item.label} className="border-b border-slate-700 pb-3">
+                <div key={item.label} className="border-b border-slate-700/50 pb-3">
                   <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-1">{item.label}</p>
                   <p className="text-sm font-bold text-white">{item.value}</p>
                 </div>
