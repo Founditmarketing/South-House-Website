@@ -214,7 +214,7 @@ export default function Contact() {
       <section className="h-[600px] w-full border-t border-slate-800 grayscale invert opacity-50 hover:grayscale-0 hover:invert-0 hover:opacity-100 transition-all duration-1000">
          <iframe 
           title="SouthHouse CPA LLC Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.883734676527!2d-92.585724!3d40.1894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e719396e955dab%3A0xe542617f698d89e4!2sSouthHouse%20CPA%20LLC!5e0!3m2!1sen!2sus!4v1713500000000!5m2!1sen!2sus" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.1!2d-84.0332!3d36.0465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c4e2b1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2s463%20Old%20Hen%20Valley%20Rd%2C%20Oliver%20Springs%2C%20TN%2037840!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus" 
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 

@@ -43,13 +43,8 @@ export default function Home() {
         {/* Right Panel - Massive Stats */}
         <div className="lg:w-2/5 relative flex items-center justify-center p-8 lg:p-16 overflow-hidden bg-secondary">
           <div className="absolute inset-0 z-0">
-             <img 
-               src="https://picsum.photos/seed/accounting_luxury/1200/1800"
-               alt="Professional Environment"
-               className="w-full h-full object-cover opacity-10 filter grayscale contrast-150"
-               referrerPolicy="no-referrer"
-             />
-             <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/80" />
+             <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-primary/60" />
+             <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'repeating-linear-gradient(45deg, #d4af37 0, #d4af37 1px, transparent 0, transparent 50%)', backgroundSize: '20px 20px'}} />
           </div>
           
           <div className="relative z-10 w-full flex flex-col gap-10 max-w-md">
@@ -140,7 +135,7 @@ export default function Home() {
           <div className="relative z-10">
             <h2 className="text-5xl md:text-8xl font-black mb-12 leading-[1] tracking-tight uppercase">Strategic <br/><span className="text-gold italic">Integrity.</span></h2>
             <p className="text-2xl text-slate-400 mb-16 leading-relaxed italic font-medium max-w-xl">
-              "We don't just process returns. We partner with visionaries to engineer sustainable financial trajectories."
+              "Growth should never come at the expense of client care. Unlike larger firms, all work is personally performed by Steven Sorhus — no delegation, no surprises."
             </p>
             <div className="space-y-10">
               <div className="flex gap-8 p-10 bg-secondary border border-slate-700 shadow-2xl relative overflow-hidden group">
@@ -148,32 +143,39 @@ export default function Home() {
                  <CheckCircle className="text-gold shrink-0 mt-1" size={32} />
                  <div>
                     <h4 className="text-2xl font-black mb-3 uppercase tracking-tight text-white">Direct Principal Review</h4>
-                    <p className="text-lg text-slate-400 font-medium">16 years of hands-on expertise. Every engagement is personally reviewed by Steven Sorhus for absolute precision.</p>
+                     <p className="text-lg text-slate-400 font-medium">14+ years of hands-on expertise. Every engagement is personally reviewed by Steven Sorhus for accuracy and consistency.</p>
                  </div>
               </div>
               <div className="flex gap-8 p-10 bg-secondary border border-slate-700 shadow-2xl relative overflow-hidden group">
                  <div className="absolute top-0 left-0 w-1.5 h-full bg-accent"></div>
                  <Users className="text-accent shrink-0 mt-1" size={32} />
                  <div>
-                    <h4 className="text-2xl font-black mb-3 uppercase tracking-tight text-white">National Proficiency</h4>
-                    <p className="text-lg text-slate-400 font-medium">Operating in 49 states. We leverage a military-grade secure infrastructure to bridge the distance between us.</p>
+                     <h4 className="text-2xl font-black mb-3 uppercase tracking-tight text-white">Fully Remote Since 2016</h4>
+                     <p className="text-lg text-slate-400 font-medium">Serving clients across the U.S. and internationally via a secure, paperless cloud infrastructure through TaxDome.</p>
                  </div>
               </div>
             </div>
           </div>
           
           <div className="relative">
-             <div className="aspect-[3/4] bg-secondary p-4 border border-slate-700 shadow-3xl">
-                <img 
-                  src="https://picsum.photos/seed/accounting_leadership/1200/1600" 
-                  alt="Principal Vision" 
-                  className="w-full h-full object-cover filter grayscale opacity-50 contrast-125 hover:opacity-100 transition-all duration-1000"
-                  referrerPolicy="no-referrer"
-                />
+             <div className="aspect-[3/4] bg-secondary p-8 border border-slate-700 shadow-2xl flex flex-col justify-between overflow-hidden">
+               <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'repeating-linear-gradient(-45deg, #d4af37 0, #d4af37 1px, transparent 0, transparent 50%)', backgroundSize: '24px 24px'}} />
+               <div className="relative z-10">
+                 <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-gold mb-6">Founded August 2011</p>
+                 <p className="text-5xl font-black text-white leading-tight tracking-tight">SOUTH<br/>HOUSE<br/><span className="text-gold italic">CPA</span></p>
+               </div>
+               <div className="relative z-10 space-y-4">
+                 {["Tax Preparation & Planning", "Bookkeeping & Payroll", "Business Advisory"].map((s) => (
+                   <div key={s} className="flex items-center gap-3">
+                     <div className="w-2 h-2 bg-gold shrink-0" />
+                     <span className="text-sm font-bold text-slate-300 uppercase tracking-widest">{s}</span>
+                   </div>
+                 ))}
+               </div>
              </div>
              <div className="absolute -bottom-16 -left-16 bg-gold p-12 shadow-2xl skew-x-[-6deg]">
                 <p className="text-5xl font-black italic mb-1 text-primary tracking-tighter uppercase leading-none">CPA</p>
-                <p className="text-primary font-bold uppercase tracking-[0.2em] text-[10px]">Board Certified Seniority</p>
+                <p className="text-primary font-bold uppercase tracking-[0.2em] text-[10px]">Master of Accountancy</p>
              </div>
           </div>
         </div>

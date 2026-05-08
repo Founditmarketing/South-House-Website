@@ -1,64 +1,54 @@
 import { motion } from 'motion/react';
-import { Shield, Calculator, FileText, Briefcase, Zap, CheckCircle, ExternalLink } from 'lucide-react';
+import { Calculator, FileText, Briefcase, CheckCircle, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Services() {
   const serviceDetails = [
     {
-      id: "business",
-      title: "Business Tax Preparation",
+      id: "tax-prep",
+      title: "Tax Preparation & Planning",
       icon: <Briefcase size={40} className="text-gold" />,
-      who: "LLCs, S-Corps, Corporations, and the Self-Employed.",
+      who: "Individuals, families, small businesses, S-Corps, LLCs, and the self-employed.",
       what: [
         "Federal & State Income Tax Filing",
-        "Strategic Deduction Identification",
-        "Estimated Tax Calculations",
+        "Complex 1040 & Schedule C/E Returns",
+        "Investment & Crypto Income Reporting",
         "Multi-state Compliance Preparation",
-        "Audit Support & Representation"
+        "Proactive Year-Round Tax Planning",
+        "Estimated Tax Calculations",
+        "IRS Notice Response & Audit Support"
       ],
-      why: "16 years of expertise means we understand the tax code's nuances. We proactively hunt for savings that others miss."
-    },
-    {
-      id: "individual",
-      title: "Individual Tax Preparation",
-      icon: <UserCheckIcon size={40} className="text-gold" />,
-      who: "Employees, Investors, Families, and High-Net-Worth Individuals.",
-      what: [
-        "Complex 1040 Filings",
-        "Investment Income Reporting (Capital Gains, Crypto)",
-        "Schedule C & E Expertise",
-        "Retirement Contribution Optimization",
-        "Refund Trajectory Planning"
-      ],
-      why: "Personalized attention ensures no stone is left unturned. We treat your personal taxes with the same rigor as a corporate audit."
+      why: "14+ years of expertise means we understand the tax code's nuances. We proactively identify savings that others miss — with every return personally reviewed by Steven."
     },
     {
       id: "bookkeeping",
-      title: "Bookkeeping & Accounting",
+      title: "Bookkeeping & Payroll",
       icon: <FileText size={40} className="text-gold" />,
-      who: "Growing businesses needing reliable financial visibility.",
+      who: "Growing businesses needing accurate, cloud-based financial visibility and compliant payroll processing.",
       what: [
         "Monthly Transaction Reconciliation",
         "Financial Statement Generation (P&L, Balance Sheet)",
         "Accounts Payable/Receivable Management",
-        "Payroll Integration & Compliance",
-        "Real-time Access via Tax Dome Portal"
+        "Payroll Processing & Compliance",
+        "In-house or Outsourced Options",
+        "Real-time Access via TaxDome Portal"
       ],
-      why: "Accuracy is non-negotiable. We provide the hard data you need to make confident, strategic business decisions."
+      why: "Provided in-house or outsourced depending on your situation. Accurate, timely reporting gives you the hard data you need to make confident decisions."
     },
     {
-      id: "planning",
-      title: "Tax Planning & Strategy",
+      id: "advisory",
+      title: "Business Advisory",
       icon: <Calculator size={40} className="text-gold" />,
-      who: "Owners and individuals looking to minimize multi-year liabilities.",
+      who: "Business owners looking to scale, structure, and succeed — from startups to established companies.",
       what: [
-        "Quarterly Strategic Reviews",
         "Entity Choice Consulting (LLC vs S-Corp)",
-        "Deduction Timing Strategies",
-        "Estate & Legacy Planning",
-        "Exit Strategy Tax Minimization"
+        "Operating Capital & Cash Flow Management",
+        "Corporate Veil & Compliance Guidance",
+        "Distribution & Compensation Strategy",
+        "Accounting Systems & Reporting Tools",
+        "Exit Planning & Strategic Decisions"
       ],
-      why: "Wealth shouldn't be lost to poor planning. We are proactive, not reactive, ensuring your long-term goals are realized."
+      why: "Strategic guidance drawn from real-world experience working with clients from modest wage earners to multinational organizations. Direct access to Steven means you get answers, not voicemail."
     }
   ];
 
@@ -155,9 +145,9 @@ export default function Services() {
              <div className="inline-block px-4 py-2 bg-accent/20 text-accent font-bold uppercase tracking-[0.2em] text-[10px] rounded-sm mb-8 border border-accent/30">
                Integrated Infrastructure
              </div>
-             <h2 className="text-5xl md:text-7xl font-black mb-10 leading-[1.05] tracking-tight">The <span className="text-gold italic">Tax Dome</span> Advantage.</h2>
+             <h2 className="text-5xl md:text-7xl font-black mb-10 leading-[1.05] tracking-tight">The <span className="text-gold italic">TaxDome</span> Advantage.</h2>
              <p className="text-2xl text-slate-400 leading-relaxed italic mb-12 font-medium">
-               "Modern accounting shouldn't be a game of phone tag. We utilize Tax Dome to provide our clients with a secure, real-time window into their financial health."
+               "Modern accounting shouldn't be a game of phone tag. We utilize TaxDome to provide our clients with a secure, real-time window into their financial health."
              </p>
              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
                 {[
@@ -184,18 +174,24 @@ export default function Services() {
              </div>
           </div>
           <div className="lg:w-1/2 relative group">
-             <div className="aspect-video bg-secondary rounded-sm overflow-hidden border border-slate-700 shadow-2xl relative">
-                <img 
-                  src="https://picsum.photos/seed/tax_dashboard/1000/600" 
-                  alt="Tax Dome Portal View" 
-                  className="w-full h-full object-cover opacity-30 filter grayscale group-hover:grayscale-0 transition-all duration-700"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/80 to-transparent" />
+             <div className="aspect-video bg-secondary rounded-sm overflow-hidden border border-slate-700 shadow-2xl relative flex flex-col justify-between p-10">
+                <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'repeating-linear-gradient(45deg, #0066cc 0, #0066cc 1px, transparent 0, transparent 50%)', backgroundSize: '20px 20px'}} />
+                <div className="relative z-10">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-accent mb-4">Client Portal</p>
+                  <p className="text-3xl font-black text-white tracking-tight">southhousecpa<br/><span className="text-accent">.taxdome.com</span></p>
+                </div>
+                <div className="relative z-10 space-y-3">
+                  {["Secure document upload", "E-sign tax returns", "Track return status", "Direct messaging"].map((f) => (
+                    <div key={f} className="flex items-center gap-3">
+                      <CheckCircle size={14} className="text-accent shrink-0" />
+                      <span className="text-sm text-slate-300 font-medium">{f}</span>
+                    </div>
+                  ))}
+                </div>
              </div>
              <div className="absolute -bottom-10 -left-10 bg-accent px-8 py-6 rounded-sm shadow-2xl border border-blue-400">
                 <p className="text-4xl font-black italic mb-1 text-white uppercase tracking-tighter">SECURE</p>
-                <p className="text-white font-bold uppercase tracking-[0.2em] text-[10px] opacity-80">Full ISO Compliance</p>
+                <p className="text-white font-bold uppercase tracking-[0.2em] text-[10px] opacity-80">AES-256 Encrypted</p>
              </div>
           </div>
         </div>
@@ -214,26 +210,5 @@ export default function Services() {
          </div>
       </section>
     </div>
-  );
-}
-
-function UserCheckIcon({ className, size }: { className?: string, size?: number }) {
-  return (
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      width={size || 24} 
-      height={size || 24} 
-      viewBox="0 0 24 24" 
-      fill="none" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      strokeLinejoin="round" 
-      className={className}
-    >
-      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-      <circle cx="9" cy="7" r="4" />
-      <polyline points="16 11 18 13 22 9" />
-    </svg>
   );
 }

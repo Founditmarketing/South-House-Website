@@ -35,13 +35,26 @@ export default function About() {
       {/* Owner Detail */}
       <section className="section-container grid grid-cols-1 lg:grid-cols-2 gap-24 items-center !py-32">
         <div className="relative group">
-          <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl border border-slate-800">
-            <img 
-              src="https://picsum.photos/seed/steven_portrait/800/1000" 
-              alt="Steven Sorhus, CPA" 
-              className="w-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700"
-              referrerPolicy="no-referrer"
-            />
+          <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl border border-slate-800 bg-secondary p-10 flex flex-col justify-between aspect-[4/5]">
+            <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'repeating-linear-gradient(-45deg, #d4af37 0, #d4af37 1px, transparent 0, transparent 50%)', backgroundSize: '24px 24px'}} />
+            <div className="relative z-10">
+              <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-gold mb-6">Principal</p>
+              <p className="text-4xl font-black text-white leading-tight tracking-tight">Steven<br/>Sorhus<br/><span className="text-gold italic">CPA</span></p>
+            </div>
+            <div className="relative z-10 space-y-5">
+              {[
+                { label: "Education", value: "Master of Accountancy" },
+                { label: "University", value: "Truman State University" },
+                { label: "Licensed", value: "Certified Public Accountant" },
+                { label: "Founded", value: "August 2011" },
+                { label: "Remote Since", value: "2016" },
+              ].map((item) => (
+                <div key={item.label} className="border-b border-slate-700 pb-3">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-1">{item.label}</p>
+                  <p className="text-sm font-bold text-white">{item.value}</p>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-gold/5 rounded-full blur-[100px] pointer-events-none"></div>
           <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-accent/5 rounded-full blur-[100px] pointer-events-none"></div>
