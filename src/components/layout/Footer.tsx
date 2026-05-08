@@ -1,5 +1,4 @@
 import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -79,10 +78,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-10 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500">
-          <p>© {currentYear} SouthHouse CPA LLC. Professional Integrity Since 2010.</p>
+          <p>© {currentYear} SouthHouse CPA LLC. Founded August 2011.</p>
           <div className="flex space-x-8 mt-6 md:mt-0">
-            <Link to="/privacy" className="hover:text-gold transition-colors transition-colors transition-colors">Privacy</Link>
-            <Link to="/terms" className="hover:text-gold transition-colors transition-colors transition-colors">Legal</Link>
+            <a href="https://southhousecpa.taxdome.com/login" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Client Portal</a>
+            <a href="https://www.calendly.com/sorhuscpa" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Schedule</a>
           </div>
         </div>
       </div>

@@ -13,8 +13,13 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for reaching out. Steven will review your inquiry and respond within 24 hours.');
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
+    const subject = encodeURIComponent(`SouthHouse CPA Inquiry - ${data.get('service')}`);
+    const body = encodeURIComponent(
+      `Name: ${data.get('name')}\nPhone: ${data.get('phone')}\nService: ${data.get('service')}\n\nMessage:\n${data.get('message')}`
+    );
+    window.location.href = `mailto:southhousecpa@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (

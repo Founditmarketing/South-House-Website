@@ -97,12 +97,11 @@ export default function Home() {
             <p className="text-xl text-slate-500 max-w-sm mb-2 font-medium">Providing precision-led accounting and tax leadership with 14+ years of verified excellence. Founded in 2011.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { id: "01", title: "Business Tax", text: "Comprehensive filing and strategic multi-year planning for S-Corps and LLCs.", info: "Asset Depreciation / Nexus Study" },
-              { id: "02", title: "Individual Prep", text: "Elite-level 1040 optimization and wealth preservation strategies.", info: "High-Net-Worth / Complex 1040" },
-              { id: "03", title: "Bookkeeping", text: "Real-time visibility and paperless integration through our secure portal.", info: "Cloud Sync / Audit Trail" },
-              { id: "04", title: "CFO Advisory", text: "Direct principal advisory to scale business operations and outcomes.", info: "Exit Strategy / Growth Metrics" },
+              { id: "01", title: "Tax Prep & Planning", text: "Individual and business returns, proactive year-round planning, IRS notice response, and multi-state compliance.", info: "1040 / S-Corp / LLC / Schedule C" },
+              { id: "02", title: "Bookkeeping & Payroll", text: "Accurate, cloud-based financial tracking and compliant payroll processing — in-house or outsourced.", info: "TaxDome Portal / Real-time Access" },
+              { id: "03", title: "Business Advisory", text: "Strategic guidance on entity structure, operating capital, distributions, and scaling your business.", info: "LLC vs S-Corp / Exit Planning" },
             ].map((item) => (
               <div key={item.id} className="flex flex-col gap-8 group p-10 bg-secondary border border-slate-800 hover:border-gold/30 transition-all duration-500">
                 <div className="flex justify-between items-start">
