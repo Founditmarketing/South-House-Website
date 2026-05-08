@@ -173,27 +173,28 @@ export default function Services() {
                 </a>
              </div>
           </div>
-          <div className="lg:w-1/2 relative group">
-             <div className="aspect-video bg-secondary rounded-sm overflow-hidden border border-slate-700 shadow-2xl relative flex flex-col justify-between p-10">
-                <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'repeating-linear-gradient(45deg, #0066cc 0, #0066cc 1px, transparent 0, transparent 50%)', backgroundSize: '20px 20px'}} />
-                <div className="relative z-10">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-accent mb-4">Client Portal</p>
-                  <p className="text-3xl font-black text-white tracking-tight">southhousecpa<br/><span className="text-accent">.taxdome.com</span></p>
-                </div>
-                <div className="relative z-10 space-y-3">
-                  {["Secure document upload", "E-sign tax returns", "Track return status", "Direct messaging"].map((f) => (
-                    <div key={f} className="flex items-center gap-3">
-                      <CheckCircle size={14} className="text-accent shrink-0" />
-                      <span className="text-sm text-slate-300 font-medium">{f}</span>
-                    </div>
-                  ))}
-                </div>
-             </div>
-             <div className="absolute -bottom-10 -left-10 bg-accent px-8 py-6 rounded-sm shadow-2xl border border-blue-400">
-                <p className="text-4xl font-black italic mb-1 text-white uppercase tracking-tighter">SECURE</p>
-                <p className="text-white font-bold uppercase tracking-[0.2em] text-[10px] opacity-80">AES-256 Encrypted</p>
-             </div>
-          </div>
+           <div className="lg:w-1/2">
+              <div className="bg-secondary rounded-sm border border-slate-700 shadow-2xl relative flex flex-col gap-8 p-10">
+                 <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'repeating-linear-gradient(45deg, #0066cc 0, #0066cc 1px, transparent 0, transparent 50%)', backgroundSize: '20px 20px'}} />
+                 <div className="relative z-10">
+                   <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-accent mb-4">Client Portal</p>
+                   <p className="text-3xl font-black text-white tracking-tight">southhousecpa<br/><span className="text-accent">.taxdome.com</span></p>
+                 </div>
+                 <div className="relative z-10 space-y-3">
+                   {["Secure document upload", "E-sign tax returns", "Track return status", "Direct messaging"].map((f) => (
+                     <div key={f} className="flex items-center gap-3">
+                       <CheckCircle size={14} className="text-accent shrink-0" />
+                       <span className="text-sm text-slate-300 font-medium">{f}</span>
+                     </div>
+                   ))}
+                 </div>
+                 <div className="relative z-10 flex items-center gap-4 self-start bg-accent px-5 py-3 rounded-sm border border-blue-400">
+                    <p className="text-xl font-black italic text-white uppercase tracking-tighter leading-none">SECURE</p>
+                    <div className="h-4 w-px bg-blue-300 opacity-50" />
+                    <p className="text-white font-bold uppercase tracking-[0.2em] text-[10px] opacity-80">AES-256 Encrypted</p>
+                 </div>
+              </div>
+           </div>
         </div>
       </section>
 
