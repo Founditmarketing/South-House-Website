@@ -18,7 +18,7 @@ export default function Services() {
         "Estimated Tax Calculations",
         "IRS Notice Response & Audit Support"
       ],
-      why: "14+ years of expertise means we understand the tax code's nuances. We proactively identify savings that others miss — with every return personally reviewed by Steven."
+      why: "16+ years of expertise means we understand the tax code's nuances. We proactively identify savings that others miss — with every return personally reviewed by Steven."
     },
     {
       id: "bookkeeping",
@@ -70,7 +70,7 @@ export default function Services() {
               Strategic <span className="text-gold">CPA</span> Solutions.
             </motion.h1>
             <p className="text-xl md:text-2xl text-slate-400 font-medium leading-relaxed max-w-2xl">
-              Serving individuals and businesses nationwide with 14+ years of meticulous expertise and a partner-led approach.
+              Serving individuals and businesses nationwide with 16+ years of meticulous expertise and a partner-led approach.
             </p>
           </div>
           <div className="bg-secondary p-12 rounded-sm border border-slate-700 flex-grow text-center shadow-2xl">

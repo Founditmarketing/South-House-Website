@@ -22,7 +22,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-slate-400 leading-relaxed text-sm">
-              14+ years of trusted CPA leadership. Fully remote since 2017, serving clients across the U.S. and internationally.
+              16+ years of trusted CPA leadership. Fully remote since 2017, serving clients across the U.S. and internationally.
             </p>
             <div className="inline-flex items-center gap-2 uppercase tracking-[0.2em] text-[10px] font-bold text-gold border border-gold/30 px-3 py-1">
                Founded August 2011

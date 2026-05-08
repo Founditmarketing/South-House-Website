@@ -24,7 +24,7 @@ export default function Home() {
                <span>Professional Integrity Since 2011</span>
             </div>
             <h1 className="text-7xl md:text-9xl font-black mb-10 leading-[0.95] tracking-tight text-white uppercase italic">
-              14+ Years of <br/>Trusted CPA <br/><span className="text-gold not-italic">Leadership.</span>
+              16+ Years of <br/>Trusted CPA <br/><span className="text-gold not-italic">Leadership.</span>
             </h1>
             <p className="text-2xl md:text-3xl mb-16 text-slate-400 max-w-2xl leading-relaxed font-medium">
               Expert tax preparation, bookkeeping, and strategic advisory for individuals and businesses nationwide.
@@ -58,7 +58,7 @@ export default function Home() {
               transition={{ delay: 0.4 }}
               className="bg-primary/60 backdrop-blur-md p-10 border-l-[6px] border-gold shadow-2xl"
             >
-              <div className="text-7xl font-black mb-2 italic text-white tracking-tighter">14+ YRS</div>
+              <div className="text-7xl font-black mb-2 italic text-white tracking-tighter">16+ YRS</div>
               <div className="text-[10px] uppercase tracking-[0.3em] text-gold font-bold">Of Professional Expertise</div>
             </motion.div>
             
@@ -98,7 +98,7 @@ export default function Home() {
               <span className="text-gold font-bold uppercase tracking-[0.4em] text-xs block mb-4">Core Competencies</span>
               <h2 className="text-5xl md:text-7xl font-black text-white uppercase tracking-tight leading-none">The Practice <br/>Overview.</h2>
             </div>
-            <p className="text-xl text-slate-500 max-w-sm mb-2 font-medium">Providing precision-led accounting and tax leadership with 14+ years of verified excellence. Founded in 2011.</p>
+            <p className="text-xl text-slate-500 max-w-sm mb-2 font-medium">Providing precision-led accounting and tax leadership with 16+ years of verified excellence. Founded in 2011.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -146,7 +146,7 @@ export default function Home() {
                  <CheckCircle className="text-gold shrink-0 mt-1" size={32} />
                  <div>
                     <h4 className="text-2xl font-black mb-3 uppercase tracking-tight text-white">Direct Principal Review</h4>
-                     <p className="text-lg text-slate-400 font-medium">14+ years of hands-on expertise. Every engagement is personally reviewed by Steven Sorhus for accuracy and consistency.</p>
+                     <p className="text-lg text-slate-400 font-medium">16+ years of hands-on expertise. Every engagement is personally reviewed by Steven Sorhus for accuracy and consistency.</p>
                  </div>
               </div>
               <div className="flex gap-8 p-10 bg-secondary border border-slate-700 shadow-2xl relative overflow-hidden group">

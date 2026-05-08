@@ -26,7 +26,7 @@ export default function About() {
                <span>The Firm Profile</span>
             </div>
             <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tight">
-               Built on <span className="text-gold italic">14+ Years</span> of Excellence.
+               Built on <span className="text-gold italic">16+ Years</span> of Excellence.
             </h1>
             <p className="text-xl md:text-2xl font-medium text-slate-400 leading-relaxed italic max-w-2xl">
               "Growth should never come at the expense of client care. At SouthHouse, you aren't a number — you're a partner."
