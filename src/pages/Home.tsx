@@ -153,7 +153,7 @@ export default function Home() {
                  <div className="absolute top-0 left-0 w-1.5 h-full bg-accent"></div>
                  <Users className="text-accent shrink-0 mt-1" size={32} />
                  <div>
-                     <h4 className="text-2xl font-black mb-3 uppercase tracking-tight text-white">Fully Remote Since 2016</h4>
+                     <h4 className="text-2xl font-black mb-3 uppercase tracking-tight text-white">Fully Remote Since 2017</h4>
                      <p className="text-lg text-slate-400 font-medium">Serving clients across the U.S. and internationally via a secure, paperless cloud infrastructure through TaxDome.</p>
                  </div>
               </div>

@@ -91,7 +91,7 @@ export default function Contact() {
                     type="email" 
                     required
                     className="w-full bg-primary border border-slate-700 p-4 text-white focus:border-gold outline-none transition-colors rounded-sm"
-                    placeholder="john@example.com"
+                    placeholder="your@email.com"
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                   />
@@ -104,7 +104,7 @@ export default function Contact() {
                   <input 
                     type="tel" 
                     className="w-full bg-primary border border-slate-700 p-4 text-white focus:border-gold outline-none transition-colors rounded-sm"
-                    placeholder="(660) 000-0000"
+                    placeholder="(xxx) xxx-xxxx"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   />

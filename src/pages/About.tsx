@@ -59,7 +59,7 @@ export default function About() {
                 { label: "University", value: "Truman State University" },
                 { label: "Licensed", value: "Certified Public Accountant" },
                 { label: "Founded", value: "August 2011" },
-                { label: "Remote Since", value: "2016" },
+                { label: "Remote Since", value: "2017" },
               ].map((item) => (
                 <div key={item.label} className="border-b border-slate-700/50 pb-3">
                   <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-1">{item.label}</p>
@@ -85,7 +85,7 @@ export default function About() {
               In August 2011, he founded SouthHouse CPA LLC with a clear mission: provide exceptional, personalized service where all work is personally performed by Steven — no back-office delegation, no answering services. Every phone call and email goes directly to him.
             </p>
             <p>
-              The firm began in the basement of Steven's Kirksville, Missouri home, grew into a professional farm office in northeast Missouri, and since 2016 has operated fully remotely — serving clients from St. Kitts, Scotland, and now Tennessee.
+              The firm began in the basement of Steven's Kirksville, Missouri home, grew into a professional farm office in northeast Missouri, and since 2017 has operated fully remotely — serving clients from St. Kitts, Scotland, and now Tennessee.
             </p>
             <p className="border-l-2 border-slate-700 pl-6 italic">
               "These experiences have reinforced our core values of flexibility, adaptability, and gratitude toward our loyal clients."
