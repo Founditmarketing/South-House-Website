@@ -28,8 +28,12 @@ export default function Navbar() {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary border-b border-slate-700 py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gold flex items-center justify-center rounded-sm font-bold text-primary text-xl italic shadow-lg">S</div>
+          <Link to="/" className="flex items-center gap-3 group">
+            <img
+              src="/images/sh-logo-mark.png"
+              alt="SouthHouse CPA logo"
+              className="w-10 h-10 object-contain filter invert brightness-200 group-hover:brightness-[3] transition-all duration-300"
+            />
             <div className="flex flex-col leading-none">
               <span className="text-lg font-bold tracking-tight text-white uppercase">SouthHouse</span>
               <span className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold">CPA LLC</span>

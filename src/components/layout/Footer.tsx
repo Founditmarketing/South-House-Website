@@ -10,8 +10,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
           {/* Brand & Reach */}
           <div className="space-y-8">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gold flex items-center justify-center rounded-sm font-bold text-primary text-xl italic shadow-lg">S</div>
+            <Link to="/" className="flex items-center gap-3 group">
+              <img
+                src="/images/sh-logo-mark.png"
+                alt="SouthHouse CPA logo"
+                className="w-10 h-10 object-contain filter invert brightness-200 group-hover:brightness-[3] transition-all duration-300"
+              />
               <div className="flex flex-col leading-none">
                 <span className="text-lg font-bold tracking-tight text-white uppercase">SouthHouse</span>
                 <span className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold">CPA LLC</span>
